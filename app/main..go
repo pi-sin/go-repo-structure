@@ -8,7 +8,6 @@ import (
 	"github.com/pi-sin/go-repo-structure/middleware"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"log"
 	"net/url"
 	"time"
 
@@ -40,7 +39,7 @@ func main() {
 	defer func() {
 		err := dbConn.Close()
 		if err != nil {
-			log.Fatal(err)
+			logrus.Fatal(err)
 		}
 	}()
 
