@@ -69,6 +69,8 @@ Here you will define, and create every needs to environment, and merge all layer
 ### Final Structure
 
 ```
+ main.go
+
  domain
  ├── article.go
  ├── author.go
@@ -85,8 +87,6 @@ Here you will define, and create every needs to environment, and merge all layer
  │       └── mysql_article.go
  └── manager //Encapsulated Implementation of Manager Interface
      └── article_manager.go
- app
- └── main.go
  config
  └── config.go
  middleware
